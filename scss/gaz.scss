@@ -1,0 +1,47 @@
+.gaz{
+
+  h2{
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $main_gold;
+    span{
+      color: $main_white;
+    }
+  }
+
+  &_logo{
+    gap: 78px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+}
+
+
+@media screen and (max-width:$phone_width) {
+  .gaz{
+
+    h2{
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 65px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $main_gold;
+      span{
+        color: $main_white;
+      }
+    }
+  
+    &_logo{
+      display: none;
+      gap: 0px;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+  }
+}

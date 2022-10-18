@@ -1,0 +1,215 @@
+#our-pr{
+  margin-bottom: 150px;
+
+  .container{
+    max-width: 1219px;
+  }
+
+  .our-pr{
+
+    &_heading{
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 65px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $main_white;
+      margin-bottom: 100px;
+
+      span{
+        color: $main_gold;
+      }
+    }
+
+    &_imgContainer{
+      display: flex;
+      img{
+        width: 400px;
+      }
+
+      &_box1{
+        position: relative;
+
+        &_p1{
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          color: $main_white;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+        }
+  
+        &_p2{
+          position: absolute;
+          bottom: 125px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: $main_white;
+          rotate: -90deg;
+        }
+      }
+
+      &_box2{
+        position: relative;
+
+        &_box3{
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          top: 50%;
+          bottom: 0;
+          left: 39%;
+          background-color: $main_gold;
+          border-radius: 50%;
+          padding: 35px;
+
+          &:hover{
+            opacity: .8;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &_box4{
+        position: relative;
+
+        &_p1{
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $main_white;
+        }
+
+        &_p2{
+          position: absolute;
+          left: 40px;
+          bottom: 80px;
+          transform: rotate(-90deg);
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: $main_white;
+        }
+      }
+
+      &_box5{
+        position: relative;
+        
+        &_p1{
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $main_white;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $phone_width) {
+  #our-pr{
+    margin-bottom: 80px;
+  
+    .container{
+      max-width: 1219px;
+    }
+  
+    .our-pr{
+  
+      &_heading{
+        width: 549px;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $main_white;
+        margin-bottom: 100px;
+  
+        span{
+          color: $main_gold;
+        }
+      }
+  
+      &_imgContainer{
+        display: flex;
+        img{
+          width: 400px;
+        }
+  
+        &_box1{
+          position: relative;
+  
+          &_p1{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            color: $main_white;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: 0.05em;
+          }
+    
+          &_p2{
+            position: absolute;
+            bottom: 125px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $main_white;
+            rotate: -90deg;
+          }
+        }
+  
+        &_box2{
+          position: relative;
+          
+          &_img1{
+            display: none;
+          }
+
+          &_img2{
+            width: 68px;
+            height: 550px;
+          }
+
+          &_box3{
+            display: none;
+          }
+        }
+  
+        &_box4{
+          display: none;
+          
+        }
+  
+        &_box5{
+          display: none;
+        }
+      }
+    }
+  }
+}

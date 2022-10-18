@@ -1,0 +1,116 @@
+#bestTheater{
+  position: relative;
+  margin-bottom: 150px;
+
+
+  .bestTheater{
+    display: flex;
+    gap: 103px;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+    &_p1{
+      width: 182px;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 98px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $main_gold;
+      margin-bottom: 25px;
+    }
+
+    ul{
+      display: flex;
+      gap: 25px;
+      li{
+
+        i{
+          font-size: 26px;
+          color: $main_gold;
+
+          &:hover{
+            cursor: progress;
+            color: $main_white;
+          }
+        }
+      }
+    }
+
+    &_p2{
+      width: 471px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+      color: $main_white;
+    }
+  }
+}
+
+
+@media screen and (max-width:$phone_width) {
+  #theater-section{
+    height: 550px;
+    background-size: cover;
+    background-image: url(/img/bg-img.png);
+    background-repeat: no-repeat;
+
+    #bestTheater{
+      position: relative;
+      margin-bottom: 150px;
+  
+      .bg-img{
+        display: none;
+      }
+    
+      .bestTheater{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        position: absolute;
+        left: auto;
+        right: auto;
+  
+    
+        &_p1{
+          width: 182px;
+          font-weight: 700;
+          font-size: 49px;
+          line-height: 98px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: $main_gold;
+          margin-bottom: 25px;
+        }
+    
+        ul{
+          display: flex;
+          gap: 25px;
+          padding: 0;
+          li{
+    
+            i{
+              font-size: 22px;
+              color: $main_gold;
+    
+              &:hover{
+                cursor: progress;
+                color: $main_white;
+              }
+            }
+          }
+        }
+    
+        &_p2{
+          width: 330px;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 150%;
+          color: $main_white;
+        }
+      }
+    }
+  }
+}
